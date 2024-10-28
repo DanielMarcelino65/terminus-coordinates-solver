@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Input from '../components/Input';
 import Button from '../components/Button';
+import Image from 'next/image';
 
 type Coordinates = {
   x: number;
@@ -29,6 +30,17 @@ export default function Home() {
 
   return (
     <div className="bg-background min-h-screen flex-col  flex justify-center items-center">
+      <div className="z-10 absolute left-2">
+        <Image
+          src="/respectiveValues.png"
+          alt="Values"
+          width={200}
+          height={200}
+        />
+        <label>
+          Thanks <span className="font-bold">@HayashiXPG</span> for the Image
+        </label>
+      </div>
       <div className="gap-4 flex">
         <Input
           type="X"
