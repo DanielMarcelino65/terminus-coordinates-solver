@@ -5,7 +5,7 @@ type ButtonProps = {
   children: React.ReactNode;
 };
 
-export const Button = ({ onClick, children }: ButtonProps) => {
+const Button = ({ onClick, children }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
@@ -15,3 +15,5 @@ export const Button = ({ onClick, children }: ButtonProps) => {
     </button>
   );
 };
+
+export default Button;

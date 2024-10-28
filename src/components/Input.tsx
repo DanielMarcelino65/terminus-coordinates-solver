@@ -6,7 +6,7 @@ type InputProps = {
   type: 'X' | 'Y' | 'Z';
 };
 
-export const Input = ({ value, onChange, type }: InputProps) => {
+const Input = ({ value, onChange, type }: InputProps) => {
   return (
     <input
       type="text"
@@ -17,3 +17,5 @@ export const Input = ({ value, onChange, type }: InputProps) => {
     />
   );
 };
+
+export default Input;
