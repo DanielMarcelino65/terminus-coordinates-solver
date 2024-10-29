@@ -30,11 +30,10 @@ export default function Home() {
 
   return (
     <div className="bg-background min-h-screen flex-col flex justify-center items-center">
-      <div className="z-10 absolute md:left-2 top-4 flex flex-col items-center space-y-2">
+      <div className="z-10 absolute md:left-2 top-4 flex flex-col items-center">
         <div className="h-64 md:h-96">
           <Image
             src="/respectiveValues.png"
-            layout="responsive"
             width={200}
             height={200}
             alt="Values"
