@@ -29,19 +29,25 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-background min-h-screen flex-col  flex justify-center items-center">
-      <div className="z-10 absolute left-2">
-        <Image
-          src="/respectiveValues.png"
-          alt="Values"
-          width={200}
-          height={200}
-        />
-        <label>
-          Thanks <span className="font-bold">@HayashiXPG</span> for the Image
-        </label>
+    <div className="bg-background min-h-screen flex-col flex justify-center items-center">
+      <div className="z-10 absolute md:left-2 top-4 flex flex-col items-center space-y-2">
+        <div className="h-64 md:h-96">
+          <Image
+            src="/respectiveValues.png"
+            layout="responsive"
+            width={200}
+            height={200}
+            alt="Values"
+            className="h-full w-auto"
+          />
+        </div>
+        <div>
+          <label className="text-end mt-2">
+            Thanks <span className="font-bold">@HayashiXPG</span> for the Image
+          </label>
+        </div>
       </div>
-      <div className="gap-4 flex">
+      <div className="gap-4 flex flex-col md:flex-row mt-16">
         <Input
           type="X"
           value={coordinates.x ? String(coordinates.x) : ''}
